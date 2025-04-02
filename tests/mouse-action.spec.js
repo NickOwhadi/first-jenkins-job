@@ -10,7 +10,7 @@ test.describe("Test Group", () => {
     });
     // create afterEach hook to wait for 3 sec
     test.afterEach(async ({ page }) => {
-        await page.waitForTimeout(1000);
+        await page.waitForTimeout(3000);
     });
   test("Left Click", async ({ page }) => {
     page.click("text=A/B Testing");
